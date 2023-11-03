@@ -1,0 +1,8 @@
+dist
+coverage
+storybook-static
+.vscode
+lint-staged.config.js
+
+# lint Storybook config as well
+!.storybook

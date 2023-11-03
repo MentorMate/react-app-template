@@ -1,0 +1,9 @@
+import { expect, test } from 'vitest';
+
+import { question } from './{{dashCase name}}';
+
+test('The Ultimate Question of Life, the Universe, and Everything', () => {
+    const answer = question();
+
+    expect(answer).toBe(42);
+});

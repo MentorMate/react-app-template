@@ -1,0 +1,12 @@
+import { expect, test } from 'vitest';
+
+import { setup } from '@tests/setup';
+import { {{pascalCase name}} } from './{{pascalCase name}}';
+
+test('increment count on click', async () => {
+    const { getByText } = setup(<{{pascalCase name}} />);
+
+    const el = getByText('{{pascalCase name}}');
+
+    expect(el).toBeInTheDocument();
+});

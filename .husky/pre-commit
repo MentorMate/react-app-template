@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/common.sh"
+
+# Run all tasks in `lint-staged.config.js` serially.
+# When linting is successfull we run the code formatting.
+npx lint-staged
