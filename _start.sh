@@ -11,7 +11,10 @@ if [[ $(git rev-list --count HEAD) -gt 1 ]]; then
     # skip creating a new git repo and commiting changes if the user's email wasn't properly configured
     if [[ $email == *@mentormate.com ]]; then
         # remove the install instructions
-        sed -i '' '/<!-- START Template Install Instructions -->/,/<!-- END Template Install Instructions -->/d' README.md
+        # sed has an option `--in-place` to update the file in place, but macOS and GNU ship with incompatible options
+        mv README.md README.md.bak
+        sed '/<!-- START Template Install Instructions -->/,/<!-- END Template Install Instructions -->/d' README.md.bak >README.md
+        rm README.md.bak
 
         version=$(git describe --tags --abbrev=0)
         head=$(git rev-parse --short HEAD)
