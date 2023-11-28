@@ -1,0 +1,16 @@
+{
+    "Named Function": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "nf",
+        "body": [
+            "const ${1:what} = (${2:params}) => {",
+            "    ${0}",
+            "};"
+        ]
+    },
+    "Use State Hook" : {
+        "scope": "javascriptreact,typescriptreact",
+        "prefix": "us",
+        "body": "const [${1}, set${1/(.*)/${1:/pascalcase}/}] = useState(${2});"
+    }
+}

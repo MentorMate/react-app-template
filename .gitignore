@@ -17,6 +17,12 @@ storybook-static
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/snippets.code-snippets
+
+# Extensions usually don't write in the Workspace settings.json so in most projects
+# it's fine to keep the shared settings in the source control system
+!.vscode/settings.json
+
 .idea
 .DS_Store
 *.suo
