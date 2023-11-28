@@ -1,4 +1,4 @@
-// note: all tasks below are run serially instead of concurrently (controlled by the pre-commit git hook)
+// note: all tasks below are ran serially instead of concurrently (controlled by the pre-commit git hook)
 // this avoids the issue of linting and formatting the same file at the same time
 const config = {
     // reusing the lint pkg script instead of only the staged files
