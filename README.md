@@ -16,7 +16,7 @@ The `main` branch of the template repository represents the latest stable versio
 
 ```
 # 1. Clone the repository.
-git clone https://github.com/MentorMate/react-starter.git my-new-project
+git clone git@github.com:MentorMate/react-app-template.git my-new-project
 
 # 2. Enter your newly-cloned directory.
 cd my-new-project
