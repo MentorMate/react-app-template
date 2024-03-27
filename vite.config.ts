@@ -10,7 +10,6 @@ export default defineConfig({
         setupFiles: ['tests/setup.tsx'],
         coverage: {
             provider: 'v8',
-            all: true,
             include: ['src/**'],
             exclude: ['src/main.tsx', 'src/**/*.d.ts', 'src/**/*.stories.tsx'],
         },
